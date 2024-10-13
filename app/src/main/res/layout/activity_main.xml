@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+>
+    <include
+        android:id="@+id/mainToolbar"
+        layout="@layout/main_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <LinearLayout
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/numberOfHours"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="204dp"
+            android:layout_height="46dp"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="false"
+            android:text=""
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            android:hint="@string/hours"/>
+
+        <EditText
+            android:id="@+id/hourlyRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:ems="10"
+            android:hint="@string/rate"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:text=""
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/calculateResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/black"
+            android:textSize="18sp"
+            android:text="@string/calculation" />
+
+        <TextView
+            android:id="@+id/displayResult"
+            android:layout_width="254dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/result"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            />
+
+        <!--    <Button-->
+        <!--        android:id="@+id/backButton"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginBottom="16dp"-->
+        <!--        android:backgroundTint="@color/black"-->
+        <!--        android:text="@string/navigateAbout"-->
+        <!--        android:textSize="18sp"-->
+        <!--        android:textColor="@color/white"/>-->
+    </LinearLayout>
+
+
+</RelativeLayout>

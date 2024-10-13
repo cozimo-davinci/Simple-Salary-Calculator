@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">assignment1</string>
+    <string name="calculation">Calculate</string>
+    <string name="hours">Number of Hours</string>
+    <string name="rate">Hourly Rate</string>
+    <string name="result">Result.....</string>
+    <string name="navigateAbout">Go to About Page</string>
+    <string name="backMain">Go Back to Main</string>
+</resources>
